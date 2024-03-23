@@ -80,4 +80,20 @@ function filmesTituloData() {
     return arrayFiltros;
 }
 
-console.log(filmesTituloData());
+
+
+
+function filmesId() {
+    
+    const arrayId = []   
+    filmes.forEach((filme, id) => {
+        arrayId.push({
+            ...filme,
+            id
+        })
+    }
+    );
+    return arrayId;
+}
+
+
